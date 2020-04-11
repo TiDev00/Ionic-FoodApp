@@ -1,8 +1,7 @@
 {
-  "name": "premierTP",
+  "name": "FoodApp",
+  "type": "angular",
   "integrations": {
-    "cordova": {},
     "capacitor": {}
-  },
-  "type": "angular"
+  }
 }
