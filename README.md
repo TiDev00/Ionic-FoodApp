@@ -26,9 +26,9 @@
 * Arrivé sur la page de login vous pouvez connecter soit comme administrateur ou simple employé ou vous inscrire comme nouvel employé 
 
   * Pour vous connecter comme administrateur, vous pouvez passer par un compte déjà créée avec les infos suivants :
-      identifiant : admin00
-      mot de passe : admin12
+    * identifiant : admin00
+    * mot de passe : admin12
   * Pour vous connecter comme simple utilisateur, vous pouvez passer par un compte déjà créée avec les infos suivants :
-      identifiant : bobo01
-      mot de passe : bobo12
+    * identifiant : bobo01
+    * mot de passe : bobo12
   * Enfin vous pouvez vous inscrire comme nouvel utilisateur en cliquant sur INSCRIPTION et en remplissant le formulaire. Après inscription, vous pourrez vous connecter avec le nouveau compte créée
