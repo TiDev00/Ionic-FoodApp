@@ -13,8 +13,8 @@
   ```
   > npm install
   ```
-  * Une fois les dépendances installées ouvrir le fichier environment.ts contenu dans le dossier src/environments
-  * Remplacer l'adresse URL à la ligne 10 par l'adresse de votre machine en ajoutant comme numéro de port 1337 et enregistrer
+* Une fois les dépendances installées ouvrir le fichier environment.ts contenu dans le dossier src/environments
+* Remplacer l'adresse URL à la ligne 10 par l'adresse de votre machine en ajoutant comme numéro de port 1337 et enregistrer
   
     
 ### Démarrage de l'application :
@@ -24,4 +24,4 @@
     > ionic serve
     ```
 * Arrivé sur la page de login vous pouvez connecter soit comme administrateur ou comme simple utilisateur
-  *
+  * Je suis
