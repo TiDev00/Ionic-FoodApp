@@ -1,6 +1,4 @@
-# Thierno Ibrahima Cissé 
-
-## Master 2 GLSI
+# Thierno Ibrahima Cissé / Master 2 GLSI
 
 ## Application FoodApp pour la gestion des de déjeuner dans une entreprise
 
@@ -19,9 +17,18 @@
     
 ### Démarrage de l'application :
 
+* Avant de démarrer l'application il faudra au préalable démarrer l'application Ionic-Strapi-FoodApp
+
 * Une fois la configuration terminée, enregistrer le fichier puis démarrer l'application avec :
      ```
     > ionic serve
     ```
-* Arrivé sur la page de login vous pouvez connecter soit comme administrateur ou comme simple utilisateur
-  * Je suis
+* Arrivé sur la page de login vous pouvez connecter soit comme administrateur ou simple employé ou vous inscrire comme nouvel employé 
+
+  * Pour vous connecter comme administrateur, vous pouvez passer par un compte déjà créée avec les infos suivants :
+      identifiant : admin00
+      mot de passe : admin12
+  * Pour vous connecter comme simple utilisateur, vous pouvez passer par un compte déjà créée avec les infos suivants :
+      identifiant : bobo01
+      mot de passe : bobo12
+  * Enfin vous pouvez vous inscrire comme nouvel utilisateur en cliquant sur INSCRIPTION et en remplissant le formulaire. Après inscription, vous pourrez vous connecter avec le nouveau compte créée
