@@ -1,0 +1,8 @@
+{
+  "name": "premierTP",
+  "integrations": {
+    "cordova": {},
+    "capacitor": {}
+  },
+  "type": "angular"
+}

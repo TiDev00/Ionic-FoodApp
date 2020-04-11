@@ -1,0 +1,31 @@
+<ion-header>
+  <ion-toolbar color ="primary">
+    <ion-title>
+      Commandes du jour
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  
+  <div *ngFor="let commande of commandes">
+    <ion-card *ngIf="commande.dateCommande===dateDuJour.toLocaleDateString()">
+
+      <ion-card-header>
+          
+          <ion-card-subtitle color ="secondary"> Id commande : <b> {{commande.id}}</b></ion-card-subtitle>
+         
+        </ion-card-header>
+
+        <ion-card-content *ngFor="let plat of commande.platsCommandes">
+          <ion-label >
+            Nom : <b> {{plat.nom}}</b>
+            Quantite : <b>{{plat.quantite}}</b>
+          </ion-label>
+      
+      </ion-card-content>
+  </ion-card>
+  </div>
+ 
+</ion-content>

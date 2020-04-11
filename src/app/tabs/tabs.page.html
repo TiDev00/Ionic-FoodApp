@@ -1,0 +1,30 @@
+<ion-tabs>
+
+  
+
+  <ion-tab-bar slot="bottom">
+    
+    <ion-tab-button tab="home" color="dark">
+      <ion-icon name="home" color="dark"></ion-icon>
+      <ion-label color="dark">Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="plats" *ngIf="role === 'administrateur' " color="dark">
+      <ion-icon name="pizza" color="dark"></ion-icon>
+      <ion-label color="dark">Plats</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="restaurant" *ngIf="role === 'administrateur' "> 
+      <ion-icon name="clipboard" color="dark"></ion-icon>
+      <ion-label color="dark">Menu du jour</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="commande" *ngIf="role === 'administrateur' " color="dark">
+      <ion-icon name="list" color="dark"></ion-icon>
+      <ion-label color="dark">Commandes</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="compte" >
+      <ion-icon name="person" color="dark"></ion-icon>
+      <ion-label color="dark">Compte</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+
+</ion-tabs>

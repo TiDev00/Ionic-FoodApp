@@ -1,0 +1,19 @@
+ion-fab-button{
+    height:40px;
+    width:40px; 
+} 
+
+.cart-icon {
+    font-size:35px;
+}
+
+.cart-length {
+    color:var(--ion-color-danger);
+    position: absolute;
+    top:5px;
+    left:10px;
+    font-weight: 600;
+    font-size: 1em;
+    min-width: 25px;
+    z-index: 10;
+}

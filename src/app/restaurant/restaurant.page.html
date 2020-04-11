@@ -1,0 +1,17 @@
+<ion-header>
+  <ion-toolbar  color="primary">
+    <ion-title>Définir menu du jour</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-item *ngFor="let plat of plats;">
+      <ion-label>{{plat.nom}}</ion-label>
+      <ion-toggle color="primary" [(ngModel)]="plat.estPlatDuJour" (ionChange)="getChanged(plat.id)"></ion-toggle>
+    </ion-item>
+  </ion-list>
+  <div>
+    <ion-button  (click)="ajouterPlatJour();" expand="block" color="primary">Confirmer le menu du jour</ion-button>
+  </div>
+</ion-content>

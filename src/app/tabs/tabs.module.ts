@@ -1,0 +1,26 @@
+import { IonicModule } from '@ionic/angular';
+import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+
+import { TabsPageRoutingModule } from './tabs-routing.module';
+
+import { TabsPage } from './tabs.page';
+import { IonicStorageModule } from '@ionic/storage';
+import { CartPageModule } from '../cart/cart.module';
+
+
+
+
+@NgModule({
+  imports: [
+    IonicModule,
+    CommonModule,
+    FormsModule,
+    TabsPageRoutingModule,
+    IonicStorageModule.forRoot(),
+    CartPageModule
+  ],
+  declarations: [TabsPage]
+})
+export class TabsPageModule {}

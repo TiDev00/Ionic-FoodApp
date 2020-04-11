@@ -1,0 +1,76 @@
+<ion-header>
+  <ion-toolbar color="primary">
+  <ion-title>Bienvenue sur AppFood</ion-title>
+  </ion-toolbar>
+  </ion-header>
+
+  
+  <ion-content>
+   
+      <form [formGroup]="Form" (submit)="authenticate(Form.value,!isLogin)">
+
+          <ion-list>
+
+            <ion-item *ngIf="!isLogin">
+              <ion-label position="stacked">Identifiant</ion-label>
+              <ion-input formControlName="username"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked" *ngIf="!isLogin">Email</ion-label>
+              <ion-input formControlName="email" *ngIf="!isLogin"></ion-input>
+              <ion-label position="stacked" *ngIf="isLogin">Identifiant</ion-label>
+              <ion-input formControlName="identifier" *ngIf="isLogin"></ion-input>
+            </ion-item>
+
+            <ion-item *ngIf="!isLogin">
+              <ion-label position="stacked" >Nom</ion-label>
+              <ion-input formControlName="nom"></ion-input>
+            </ion-item>
+
+            <ion-item *ngIf="!isLogin">
+              <ion-label position="stacked" >Prenom</ion-label>
+              <ion-input formControlName="prenom"></ion-input>
+            </ion-item>
+
+            <ion-item *ngIf="!isLogin">
+              <ion-label position="stacked" >Telephone</ion-label>
+              <ion-input formControlName="phone"></ion-input>
+            </ion-item>
+
+            <ion-item>
+              <ion-label position="stacked" >Mot de passe</ion-label>
+              <ion-input formControlName="password" type="password"></ion-input>
+            </ion-item>
+    
+        </ion-list>
+
+        
+        <ion-row>
+          <ion-col>
+
+            <ion-button
+            type="submit"
+            color="primary"
+            expand="block"
+          >
+            {{ !isLogin ? 'inscription' : 'Se Connecter' }}
+          </ion-button>
+          
+            <ion-button
+              type="button"
+              color="dark"
+              fill="clear"
+              expand="block"
+              (click)="onSwitchAuthMode()"
+            >
+              {{ !isLogin ? 'Se Connecter' : 'inscription' }}
+            </ion-button>
+
+          </ion-col>
+        </ion-row>
+         
+    </form>
+ 
+</ion-content>
+
