@@ -1,4 +1,4 @@
-# Thierno Ibrahima Cissé / Master 2 GLSI
+# Master 2 GLSI
 
 ## Application FoodApp pour la gestion des de déjeuner dans une entreprise
 
